@@ -110,7 +110,7 @@ ul { padding-left: 1.25em; margin: 0 0 1rem; }
 li { margin: .2rem 0; }
 li::marker { color: var(--bullet); }
 .two-col { column-count: 2; column-gap: 2rem; }
-.two-col li { break-inside: avoid; }
+.two-col li { break-inside: avoid; margin: 0 0 .4rem; }
 
 .entry { margin-bottom: 1.3rem; }
 .row { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
