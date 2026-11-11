@@ -19,11 +19,12 @@
 </head>
 <body>
   <header class="top">
-    <a href="#about" class="brand"><span class="mark">T</span>Theo Gao</a>
+    <a href="/" class="brand"><span class="mark">T</span>Theo Gao</a>
     <nav class="links">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#education">Education</a>
+            <a href="/" aria-current="page">About</a>
+      <a href="/work">Work</a>
+      <a href="/education">Education</a>
+      <a href="/blog">Blog</a>
     </nav>
     <div class="icons">
       <a href="https://x.com/cappuccinotada" target="_blank" rel="noopener" aria-label="X" title="X">
@@ -57,65 +58,12 @@
       </ul>
     </section>
 
-    <section id="work">
-      <h2>Work</h2>
-      <div class="entry">
-        <div class="row"><span class="what">TÜV Rheinland — Project Engineer</span><span class="when">Mar 2024 – present</span></div>
-        <div class="where">Shenzhen, China</div>
-        <ul>
-          <li>Cybersecurity assessments of SaMD/SiMD and connected medical devices across firmware, hardware, mobile, wireless, APIs, and clinical protocols (HL7, DICOM).</li>
-          <li>Remediated technical-file gaps (threat model, SBOM) in FDA, EU (MDR/IVDR), and Korea deficiency responses, bringing programs back to a certifiable submission path.</li>
-          <li>Led the lab's IEC 81001-5-1 CBTL accreditation, establishing it as an accredited cybersecurity test house for medical device CB schemes.</li>
-          <li>Delivered a public workshop on FDA medical device cybersecurity guidance, translating it into review criteria used with manufacturers.</li>
-          <li>Extended assessment methods to power distribution units against EN 303 645 and RED EN 18031-x.</li>
-        </ul>
-      </div>
-      <div class="entry">
-        <div class="row"><span class="what">Tsinghua University — Research Assistant</span><span class="when">Dec 2019 – Oct 2020</span></div>
-        <div class="where">Beijing, China</div>
-        <ul>
-          <li>Spatial data analysis of carbon emissions with ArcGIS and R; contributed to abstract writing and literature review.</li>
-        </ul>
-      </div>
-
-      <h3>Research projects (NUS)</h3>
-      <ul>
-        <li><span class="what">Instrument segmentation in endoscopic robotic surgery</span> <span class="when-inline">2023</span> — compared U-Net and TransUNet for surgical instrument segmentation using mean IoU.</li>
-        <li><span class="what">Deep learning for lung tumor diagnosis</span> <span class="when-inline">2023–24</span> — processed DICOM imaging data and built convolutional classification and segmentation models.</li>
-      </ul>
-    </section>
-
-    <section id="standards">
-      <h2>Standards &amp; tools</h2>
-      <p class="tags"><span>IEC 60601-1</span><span>IEC 62304</span><span>IEC 62366</span><span>IEC 81001-5-1</span><span>IEC 82304</span><span>ISO 14971</span><span>UL 2900-2-1</span><span>EN 303 645</span><span>EN 18031</span></p>
-      <p class="muted">Ghidra, IDA Pro, Binwalk, EMBA, Frida, Burp Suite, Wireshark, ChipWhisperer, J-Link, logic analyzer, HackRF One, Proxmark3, nRF52840 · C/C++, bare-metal C, ARM Cortex-M assembly, Python, Lua</p>
-      <p class="muted">Certifications: CompTIA PenTest+ (2024) · NVIDIA-Certified Associate, Generative AI and LLMs (2025)</p>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <div class="entry">
-        <div class="row"><span class="what">National University of Singapore</span><span class="when">Jan 2023 – Jan 2024</span></div>
-        <div class="where">MSc Biomedical Engineering · Medical Robotics Intelligence</div>
-      </div>
-      <div class="entry">
-        <div class="row"><span class="what">Georgia State University</span><span class="when">2018 – 2022</span></div>
-        <div class="where">BSc Biology, minor in Chemistry</div>
-      </div>
-      <div class="entry">
-        <div class="row"><span class="what">Southwest Jiaotong University</span><span class="when">double degree</span></div>
-        <div class="where">Bioengineering</div>
-      </div>
-      <p class="muted">Honors: iGEM Silver Medal (2020) · Out-of-State Tuition Scholarship, Georgia State (2020) · Comprehensive Scholarship, Third Prize, Southwest Jiaotong (2019)</p>
-    </section>
-
     <section id="contact">
       <p>Always happy to talk medical device security, standards, or regulatory work. <a href="mailto:lgao0703@gmail.com">Email me</a> or find me on <a href="https://www.linkedin.com/in/long-g-54a371252/" target="_blank" rel="noopener">LinkedIn</a>.</p>
     </section>
   </main>
 
   <footer class="foot">© <span id="yr">2026</span> Theo Gao</footer>
-
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
     document.getElementById('theme').addEventListener('click', function () {
