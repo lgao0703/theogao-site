@@ -84,16 +84,23 @@ body::after {
 }
 .brand {
   position: absolute; left: 2rem;
-  display: flex; align-items: center; gap: .5rem;
+  display: flex; align-items: center; gap: .7rem;
   font-size: 18px; opacity: .85;
 }
 .brand:hover { opacity: 1; }
-.mark {
-  width: 24px; height: 24px; border-radius: 50%;
-  background: var(--soft); color: var(--bg);
-  display: inline-flex; align-items: center; justify-content: center;
-  font-size: 14px;
+.seal {
+  height: 44px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
 }
+.seal-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .seal-light { display: none; }
+  :root:not([data-theme="light"]) .seal-dark { display: block; }
+}
+:root[data-theme="dark"] .seal-light { display: none; }
+:root[data-theme="dark"] .seal-dark { display: block; }
 .links { text-align: center; }
 .links::after {
   content: ''; display: block; width: 200px; height: 1px;
